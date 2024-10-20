@@ -1,0 +1,36 @@
+{
+  "name": "gths",
+  "version": "1.0.0",
+  "description": "my first backend website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "I",
+    "am",
+    "very",
+    "Excited",
+    "by",
+    "making",
+    "my",
+    "first",
+    "backend",
+    "website"
+  ],
+  "author": "Muzammil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "build": "^0.1.4",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.3",
+    "slugify": "^1.6.6",
+    "views": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
