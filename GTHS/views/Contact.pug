@@ -1,0 +1,110 @@
+extends base.pug
+block title 
+    title Contact to us 
+block css-js 
+    link(rel="stylesheet", href="../static/css/contact.css")
+
+block main-content
+    h1.top-h1 Contact Us
+    p.top-p Contact Us freely for admission, Vist or get information about school. We are making childrens able to make their future
+
+    section.second-box
+        .second-boxes(id="second-box-1")
+            div 
+                h1.visit-h1 Visit Our School 
+                h3.visit-h3 ADDRESS 
+                p.visit-p C447+CM9, Habib Jalib Rd, Block C <br>  People's Colony No 1, Faisalabad, Punjab
+                h3.visit-h3 E-mail Us
+                p.visit-p
+                    a(href="https://mail.google.com/mail/u/0/#search/technical%40gmail.com?compose=new") Technical@gmail.com
+                h3.visit-h3 Call Us on 
+                p.visit-p 041-9220168
+                h3.visit-h3 School timing 
+                h4.visit-h2 from Monday - Thursday
+                p.visit-p 8:00am - 1:30pm
+                h4.visit-h2 On Friday
+                p.visit-p 8:00am - 11:30am
+            img(src="../static/images/staffroom.png" alt="staffroom").contact-images
+        .second-boxes(id="second-box-3")
+
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.586232398761!2d73.11438389999999!3d31.4060493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226874f81468d1%3A0xd4246018dd49e7ba!2sGovt.%20Technical%20High%20School!5e0!3m2!1sen!2s!4v1726906486354!5m2!1sen!").contact-images
+
+            div.contact-form
+                h1.visit-h1 Contact us by form 
+                form(action="/contact", method="post")#contact-form
+                    table 
+                        tr 
+                            td
+                                label(for="Fname") First Name *
+                                br
+                                input(type="text", name="Fname")#fname
+                            td 
+                                label(for="Lname") Last Name *
+                                br
+                                input(type="text", name="Lname")#lname
+                        tr 
+                            td 
+                                label(for="Email") E-mail *
+                                br
+                                input(type="email", name="Email")#email
+                            td 
+                                label(for="Phone") Phone 
+                                br
+                                input(type="tel", name="Phone")#number
+                        tr 
+                            td(colspan="2")
+                                label(for="Message") Enter your message *
+                                textarea(name="Message", cols="30", rows="10")#message
+                        tr 
+                            td(colspan="2")
+                                input(type="submit", value="Submit").submit
+    //- box 2
+    section.second-box2
+        .second-boxes2(id="second-box-1-2")
+            img(src="../static/images/staffroom.png" alt="staffroom")
+            div 
+                h1.visit-h1 Visit Our School 
+                h3.visit-h3 ADDRESS 
+                p.visit-p C447+CM9, Habib Jalib Rd, Block C <br>  People's Colony No 1, Faisalabad, Punjab
+                h3.visit-h3 E-mail Us
+                p.visit-p
+                    a(href="https://mail.google.com/mail/u/0/#search/technical%40gmail.com?compose=new") Technical@gmail.com
+                h3.visit-h3 Call Us on 
+                p.visit-p 041-9220168
+                h3.visit-h3 School timing 
+                h4.visit-h2 from Monday - Thursday
+                p.visit-p 8:00am - 1:30pm
+                h4.visit-h2 On Friday
+                p.visit-p 8:00am - 11:30am
+        .second-boxes2(id="second-box-3-2")
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.586232398761!2d73.11438389999999!3d31.4060493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226874f81468d1%3A0xd4246018dd49e7ba!2sGovt.%20Technical%20High%20School!5e0!3m2!1sen!2s!4v1726906486354!5m2!1sen!")
+
+            div.contact-form
+                h1.visit-h1 Contact us by form 
+                form(action="/contact", method="post")#contact-form
+                    table 
+                        tr 
+                            td
+                                label(for="Fname") First Name *
+                                br
+                                input(type="text", name="Fname")#fname
+                            td 
+                                label(for="Lname") Last Name *
+                                br
+                                input(type="text", name="Lname")#lname
+                        tr 
+                            td 
+                                label(for="Email") E-mail *
+                                br
+                                input(type="email", name="Email")#email
+                            td 
+                                label(for="Phone") Phone 
+                                br
+                                input(type="tel", name="Phone")#number
+                        tr 
+                            td(colspan="2")
+                                label(for="Message") Enter your message *
+                                textarea(name="Message", cols="30", rows="10")#message
+                        tr 
+                            td(colspan="2")
+                                input(type="submit", value="Submit").submit

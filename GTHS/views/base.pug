@@ -1,0 +1,139 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    block title
+    // other css and js
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+    link(rel="stylesheet" href="../static/css/w3 css.css")
+    // my css and js and favicon
+    link(rel="shortcut icon" href="../static/images/logo.png" type="image/x-icon")
+    link(rel="stylesheet", href="../static/css/index.css")
+    script(src="../static/js/index.js") 
+    block css-js
+
+  body
+    .main-body(id="main-body")
+      // navbar
+      //-nav 1
+      navbar.nav(id="nav")
+        .navbar-top(id="navbar-top")
+          .navbar-top-sec1(id="navbar-top-sec1")
+            .search-icon
+              i.fas.fa-search
+            input.search-box(type="search" name="search" id="search-box" autocomplete="off" placeholder="search...")
+          .navbar-top-sec2(id="navbar-top-sec2")
+            a(href="/") 
+              img(src="../static/images/logo.png" alt="log is being created")
+          .navbar-top-sec3(id="navbar-top-sec3")
+            // login
+            a(href="/login" target='_parent') 
+              .navbar-top-sec3-login(id="navbar-top-sec3-login")
+                svg(width="45" height="45" viewBox="0 0 18 18" id="avatar" class="avatar" style="margin: 10px;")
+                  path.svg_color(fill="black" d="M14.351 13.545c-.804-1.281-2.036-2.215-3.448-2.664.738-.573 1.22-1.457 1.22-2.46 0-1.723-1.4-3.124-3.123-3.124-1.722 0-3.124 1.401-3.124 3.124 0 1.003.483 1.888 1.221 2.46-1.412.449-2.644 1.383-3.448 2.664C2.606 12.318 1.972 10.733 1.972 9c0-3.876 3.153-7.03 7.028-7.03 3.875 0 7.028 3.154 7.028 7.03 0 1.732-.634 3.317-1.677 4.544M6.848 8.42c0-1.187.965-2.152 2.152-2.152 1.187 0 2.152.965 2.152 2.152 0 1.186-.965 2.152-2.152 2.152-1.187 0-2.152-.966-2.152-2.152M9 16.028c-1.792 0-3.424-.68-4.666-1.787.011-.016.03-.024.042-.042.958-1.637 2.729-2.654 4.624-2.654 1.894 0 3.666 1.017 4.623 2.653.011.018.028.03.04.046C12.421 15.35 10.79 16.028 9 16.028M9 1C4.59 1 1 4.59 1 9.001 1 13.411 4.59 17 9 17s8-3.588 8-7.999C17 4.589 13.41 1 9 1" transform="translate(-1109 -73) translate(1089 58) translate(19 15) translate(1)")
+                p Log-In
+            a(href="https://www.youtube.com/results?search_query=technical+high+school+fsd+official+channel")
+              div.fab.fa-youtube.youtube.icon-platform
+            a(href="https://twitter.com/drummond_chs")
+              div.fab.fa-twitter.twitter.icon-platform
+            a(href="https://www.instagram.com/explore/locations/2032460573644116/govt-technical-high-school-d-ground-fsd/?__d=1")
+              div.fab.fa-instagram.instagram.icon-platform
+            a(href="https://www.facebook.com/GHSTechnical54/")
+              div.fab.fa-facebook.facebook.icon-platform
+        //- nav 2
+        .navbar-top2(id="navbar-top2")
+          .navbar-top-sec2-2(id="navbar-top-sec2-2")
+            a(href="/") 
+              img(src="../static/images/logo.png" alt="log is being created")
+          .navbar-top-sec-3(id="navbar-top-sec-3")
+            // login
+            a(href="/login") 
+              .navbar-top-sec3-login(id="navbar-top-sec3-login")
+                svg(width="45" height="45" viewBox="0 0 18 18" id="avatar" class="avatar" style="margin: 10px;")
+                  path.svg_color(fill="black" d="M14.351 13.545c-.804-1.281-2.036-2.215-3.448-2.664.738-.573 1.22-1.457 1.22-2.46 0-1.723-1.4-3.124-3.123-3.124-1.722 0-3.124 1.401-3.124 3.124 0 1.003.483 1.888 1.221 2.46-1.412.449-2.644 1.383-3.448 2.664C2.606 12.318 1.972 10.733 1.972 9c0-3.876 3.153-7.03 7.028-7.03 3.875 0 7.028 3.154 7.028 7.03 0 1.732-.634 3.317-1.677 4.544M6.848 8.42c0-1.187.965-2.152 2.152-2.152 1.187 0 2.152.965 2.152 2.152 0 1.186-.965 2.152-2.152 2.152-1.187 0-2.152-.966-2.152-2.152M9 16.028c-1.792 0-3.424-.68-4.666-1.787.011-.016.03-.024.042-.042.958-1.637 2.729-2.654 4.624-2.654 1.894 0 3.666 1.017 4.623 2.653.011.018.028.03.04.046C12.421 15.35 10.79 16.028 9 16.028M9 1C4.59 1 1 4.59 1 9.001 1 13.411 4.59 17 9 17s8-3.588 8-7.999C17 4.589 13.41 1 9 1" transform="translate(-1109 -73) translate(1089 58) translate(19 15) translate(1)")
+                p Log-In
+            a(href="https://www.youtube.com/results?search_query=technical+high+school+fsd+official+channel")
+              div.fab.fa-youtube.youtube.icon-platform
+            //- a(href="https://twitter.com/drummond_chs")
+            //-   div.fab.fa-twitter.twitter.icon-platform
+            a(href="https://www.instagram.com/explore/locations/2032460573644116/govt-technical-high-school-d-ground-fsd/?__d=1")
+              div.fab.fa-instagram.instagram.icon-platform
+            a(href="https://www.facebook.com/GHSTechnical54/")
+              div.fab.fa-facebook.facebook.icon-platform
+          .navbar-top-sec1-2(id="navbar-top-sec1-2")
+            .search-icon
+              i.fas.fa-search
+            input.search-box(type="search" name="search" id="search-box" autocomplete="off" placeholder="search...")
+        .navbar-bottom(id="navbar-bottom")
+          a(href="/")
+            p.nav-item(id="nav-item1") Home
+          a(href="/About")
+            p.nav-item(id="nav-item2") About
+          a(href="/Contact")
+            p.nav-item(id="nav-item3") Contact
+          a(href="/Admission")
+            p.nav-item(id="nav-item4") Admission
+        .navbar-bottom2(id="navbar-bottom2")
+          a(href="/")
+            p.nav-item2(id="nav-item1-2") Home
+          a(href="/About")
+            p.nav-item2(id="nav-item2-2") About
+          a(href="/Contact")
+            p.nav-item2(id="nav-item3-2") Contact
+          a(href="/Admission")
+            p.nav-item2(id="nav-item4-2") Admission
+
+      // main-container
+      block main-content 
+
+      // footer
+      footer.footer(id="footer")
+        .footer-sec(id="footer-sec1")
+          a(href="/")
+            img(src="../static/images/logo2.png" alt="")
+        .footer-sec(id="footer-sec2")
+          h5 Quick Navigation
+          ul
+            li.footer-li(id="footer-li1") 
+              a(href="/") Home
+            li.footer-li(id="footer-li2") 
+              a(href="/About") About
+            li.footer-li(id="footer-li3") 
+              a(href="/Contact") Contact
+            li.footer-li(id="footer-li4") 
+              a(href="/Admission") Admission
+            //- li.footer-li(id="footer-li5") 
+            //-   a(href="/Event") Events
+        .footer-sec(id="footer-sec3")
+          h5 Connect to us on
+          ul
+            li.footer-li(id="footer-li6") 
+              a(href="https://www.youtube.com/results?search_query=technical+high+school+fsd+official+channel") 
+                span.fab.fa-youtube YouTube
+            li.footer-li(id="footer-li7") 
+              a(href="https://www.instagram.com/explore/locations/2032460573644116/govt-technical-high-school-d-ground-fsd/?__d=1") 
+                span.fab.fa-instagram Instagram
+            li.footer-li(id="footer-li8") 
+              a(href="https://twitter.com/drummond_chs") 
+                span.fab.fa-twitter Twitter
+            li.footer-li(id="footer-li9") 
+              a(href="https://www.facebook.com/GHSTechnical54/") 
+                span.fab.fa-facebook Facebook
+            li.footer-li(id="footer-li10") 
+              a(href="") 
+                span.fab.fa-facebook Facebook
+        .footer-sec(id="footer-sec4")
+          h5 Get In Touch
+          ul
+            li.footer-li#footer-li11 People Colony no 1
+            li.footer-li#footer-li12 Faisalabad, Jarawala Road
+            li.footer-li#footer-li13 Tel: 041-9220168
+            li.footer-li#footer-li14 
+                a(href='https://mail.google.com/mail/u/0/#search/technical%40gmail.com?compose=new') Technical@gmail.com
+            li.footer-li#footer-li15 
+                a(href='') info@mysite.com
+      p.copy(id="copy") © 2024 by Govt Technical High School FSD. Powered and Secured By Muzammil
+
+      //- FJ29d0EHc3k         the infinity password 

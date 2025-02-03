@@ -1,0 +1,50 @@
+extends base.pug
+block title 
+    title Govt Technical High School || Best govt school in Faisalabad
+block css-js 
+
+
+block main-content
+    .main-container(id="main-container")
+        .first-box(id="first-box")
+            .first-box-inner(id="first-box-inner")
+                h1 GOVT &nbsp; Technical High School
+                p The best GOVT school in Faisalabad. We have the best teachers in FSD. Our results are perfect for every parent and student.
+                button Visit Our School
+        section.second-box
+            .second-boxes(id="second-box-1")
+                img(src="../static/images/classroom2.png" alt="Classroom")
+                div
+                    h1 Our Study
+                    p Our study is the best among all GOVT schools in FSD. Our mission is to make students successful and well known. Every year our students achieve excellent results and positions in the district. We have hire the teachers only who have good experience.
+            .second-boxes(id="second-box-2")
+                div 
+                    h1 Our Sports Achievements
+                    p We excel in sports as well as in studies. Our school features two grounds: a hockey ground and a football ground. Every year, our students earn top positions in district-level sports competitions.
+                img(src="../static/images/play ground.png" alt="Playground")
+            .second-boxes(id="second-box-3").second-boxes
+                img(src="../static/images/library.png" alt="Library")
+                div
+                    h1 Our Labs
+                    p We have several labs in our school, including a computer lab, biology lab, chemistry lab, etc. Our library is well-stocked with many books. Students benefit from these labs to clarify their concepts and enhance their learning. Students are also happy for this.
+
+                    //-for responsive
+        section.second-box2
+            .second-boxes2(id="second-box-1-2")
+                img(src="../static/images/classroom2.png" alt="Classroom")
+                div
+                    h1 Our Study
+                    p Our study is the best among all GOVT schools in FSD. Our mission is to make students successful and well known. Every year our students achieve excellent results and positions in the district. We have hire the teachers only who have good experience.
+            .second-boxes2(id="second-box-2-2")
+                img(src="../static/images/play ground.png" alt="Playground")
+                div 
+                    h1 Our Sports Achievements
+                    p We excel in sports as well as in studies. Our school features two grounds: a hockey ground and a football ground. Every year, our students earn top positions in district-level sports competitions.
+            .second-boxes2(id="second-box-3-2")
+                img(src="../static/images/library.png" alt="Library")
+                div
+                    h1 Our Labs
+                    p We have several labs in our school, including a computer lab, biology lab, chemistry lab, etc. Our library is well-stocked with many books. Students benefit from these labs to clarify their concepts and enhance their learning.
+        section.location(id="location")
+            h1 Location
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.586232398761!2d73.11438389999999!3d31.4060493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226874f81468d1%3A0xd4246018dd49e7ba!2sGovt.%20Technical%20High%20School!5e0!3m2!1sen!2s!4v1726906486354!5m2!1sen!")
